@@ -29,7 +29,7 @@ h1 {
     padding: 10px;
 }
 
-section {
+section#about {
     float: left;
     width: 47%;
 }
@@ -115,10 +115,14 @@ form footer {
     width: 100%;
     margin: 25px 0 10px 0;
     border-top: solid 1.5px  #a32e88;
+    align-items: center;
 }
 
+ #testimonials img {
+   max-height: 100px;
+} 
 
-blockquote {
+blockquote { 
     padding: 18px;
 }
 
@@ -127,6 +131,17 @@ blockquote {
     text-align: center;
     border-top: 2px solid #a32e88;
     padding: 15px 0;
-
+     color: #a32e88;
 }
 
+@media all and (max-width: 768px) {
+    section#about {
+        float: none;
+        width: 100%;
+
+    }
+    form {
+        float: none;
+        width:100%;
+    }
+}
