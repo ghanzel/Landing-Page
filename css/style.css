@@ -1,0 +1,132 @@
+
+body {
+    font-family: 'PT Serif', serif;
+    line-height: 1.5em;
+    background-color: #fce6fb;
+}
+
+#container {
+    width: 80%;
+    margin: auto;
+}
+
+#intro {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin: 15px 0;
+    padding: 10px;
+    border-bottom: 3px solid #a32e88;
+}
+
+h1 {
+    font-size: 32px;
+    padding: 8px;
+}
+
+#intro p {
+    font-size: 22px;
+    padding: 10px;
+}
+
+section {
+    float: left;
+    width: 47%;
+}
+
+article {
+    padding: 10px;
+    
+}
+
+article:nth-child(2) {
+    border-bottom: dotted 1px  #a32e88;
+    border-top: dotted 1px  #a32e88;
+}
+
+article img {
+    height: 40px;
+    width: 40px;
+    float: left;
+    margin: 3px 8px 0 0;
+}
+
+article h2, h4 {
+    font-weight: bold;
+}
+
+article p {
+    margin-top: 5px;
+}
+
+
+form {
+    float: right;
+    width: 43%;
+    background-color: #e3d5e3;
+    border: 2px solid  #a32e88;
+    border-radius: 7px;
+    padding: 20px 30px 20px 30px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    
+    box-sizing: border-box;
+    
+}
+
+form > * {
+    width: 80%;
+    margin: auto;
+}
+
+#personal-data input {
+    display: block;
+}
+
+form header h4 {
+    text-align: center;
+}
+form header p  {
+    text-align: center;
+    border-bottom: dotted 1px  #a32e88;
+    padding-bottom: 8px;
+}
+
+form > p {
+    line-height: 1em;
+    color: #a32e88;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+form footer {
+    font-size: 14px;
+    border-top: dotted 1px  #a32e88;
+    margin-top: 10px;
+}
+
+.clear {
+    clear: both;
+}
+
+#testimonials {
+    display: flex;
+    width: 100%;
+    margin: 25px 0 10px 0;
+    border-top: solid 1.5px  #a32e88;
+}
+
+
+blockquote {
+    padding: 18px;
+}
+
+
+#footer-main {
+    text-align: center;
+    border-top: 2px solid #a32e88;
+    padding: 15px 0;
+
+}
+

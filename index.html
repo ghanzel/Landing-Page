@@ -2,13 +2,13 @@
 <html lang='en'>
     <head>
         <title>Welcome</title>
-        <link rel='stylesheet' href='css/style.css' />
         <link rel='stylesheet' href='css/reset.css' />
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet">
+        <link rel='stylesheet' href='css/style.css' />
+        <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
     </head>
     <body>
         <div id='container'>
-            <header>
+            <header id='intro'>
                 <img id='logo' src='images/ThreePiggies.png' alt='Three Piggies' />
                 <h1>Three Language Piggies</h1>
                 <p> Learn Languages with José, Sergei and Johan</p>
@@ -17,14 +17,14 @@
                 <article>
                     <img src='images/Jose.png' alt='Piggy Jose' />
                     <h2>Piggy José</h2>
-                    <p>Spanish</p>
+                    <h2>Spanish</h2>
                     <p>Piggy José can teach you all about the Spanish language.
                         With the Spanish skills you gain, you will be able to communicate in over 27 countries!</p>
                 </article>
                 <article>
                     <img src='images/Sergei.png' alt='Piggy Sergei' />
                     <h2>Piggy Sergei</h2>
-                    <p>Russian</p>
+                    <h2>Russian</h2>
                     <p>Piggy Sergei will introduce you to language and culture of the largest country in the world.
                         You will learn a new alphebet and discover many interesting things about grammar.
                     </p>
@@ -32,7 +32,7 @@
                 <article>
                     <img src='images/Johan.png' alt='Piggy Johan' />
                     <h2>Piggy Johan</h2>
-                    <p>German</p>
+                    <h2>German</h2>
                     <p>Piggy Johan is eager to show you all abot Germany's culture and language.
                     </p>
                 </article>
@@ -43,16 +43,25 @@
                         <h4>Get In Touch</h4>
                         <p>Contact your favourite Piggy</p>
                     </header>
-                    <div>
+                    
                         <p>Choose the piggy you want to contact:</p>
-                        <label for='José'> Piggy José </label>
-                        <input type='radio' id='José' value='Piggy José'>
-                        <label for='Sergei'> Piggy Sergei </label>
-                        <input type='radio' id='Sergei' value='Piggy Sergei'>
-                        <label for='Johan'> Piggy Johan </label>
-                        <input type='radio' id='Johan' value='Piggy Johan'>
-                    </div>
-                    <div>
+                        <div id='piggy-choice'>
+                            <div id='choice-jose'>
+                                <input type='radio' id='José' value='Piggy José'>
+                                <label for='José'> Piggy José </label>
+                            </div>
+                            <div id='choice-serei'>
+                                <input type='radio' id='Sergei' value='Piggy Sergei'>
+                                <label for='Sergei'> Piggy Sergei </label>
+                            </div>
+                            <div id='choice-johan'>
+                                <input type='radio' id='Johan' value='Piggy Johan'>
+                                <label for='Johan'> Piggy Johan </label>
+                            </div>
+                        </div>
+                       
+                        <p>About you:</p>
+                    <div id='personal-data'>
                         <label for='name'>Name:</label>
                         <input type='text' id='name' required>
                         <label for='surname'>Surname:</label>
@@ -60,18 +69,21 @@
                         <label for='email'>Email:</label>
                         <input type='email' id='email' required>
                      </div>
+                     
                     <footer>
                         <p>Please read about our privacy policy <a href=''>here</a></p>
                     </footer>
                 </form>
+                <div class='clear'></div>
             
             <section id='testimonials'>
-                <img src='' >
+                <img src='images/quote.png' >
                 <blockquote>Learning with Three Piggies has been the best experience I've had so far with online language learning.
                     It has taken me ages to find a good school that would focus on all areas of language learning and the learning process fun.
                 </blockquote>
             </section>
-            <footer>
+            <div class='clear'></div>
+            <footer id='footer-main'>
                 <p>Copyright &copy; 2014</p>
             </footer>   
 
